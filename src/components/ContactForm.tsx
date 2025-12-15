@@ -27,7 +27,7 @@ const ContactForm = () => {
     'Roof Replacement',
     'Emergency Service',
     'Gutter Installation',
-    'Siding',
+    'Roof Maintenance',
     'Other',
   ];
 
@@ -135,7 +135,7 @@ const ContactForm = () => {
               onChange={handleChange}
               required
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-green focus:border-transparent transition-colors duration-200"
-              placeholder="(555) 123-4567"
+              placeholder="07918 291605"
             />
           </div>
 

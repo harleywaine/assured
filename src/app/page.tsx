@@ -25,7 +25,7 @@ export default function Home() {
       ),
       title: "Roof Repairs",
       description: "Fast, effective solutions for leaks, damage, and structural issues. A damaged roof can quickly lead to costly problems inside your home. Our repair specialists act fast to identify the issue and provide lasting solutions — keeping your property watertight and protected from the elements.",
-      features: ["Leak Detection & Repair", "Shingle Replacement", "Flashing Repair", "Storm Damage Repair", "Sagging Roof Repair"],
+      features: ["Leak Detection & Repair", "Tile Replacement", "Flashing Repair", "Storm Damage Repair", "Sagging Roof Repair"],
       price: "Quote"
     },
     {
@@ -76,7 +76,7 @@ export default function Home() {
               Your Roof Deserves Expert Care
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Your roof is your home's first line of defence — and it deserves expert care. At Assured Roofing, we deliver reliable, high-quality roofing solutions that protect your property and provide total peace of mind. With years of experience, exceptional craftsmanship, and a commitment to customer satisfaction, we're trusted by homeowners and developers across Dorset to get the job done right.
+              Your roof is your home's first line of defence — and it deserves expert care. At Elevate Assured, we deliver reliable, high-quality roofing solutions that protect your property and provide total peace of mind. With years of experience, exceptional craftsmanship, and a commitment to customer satisfaction, we're trusted by homeowners and developers across Dorset to get the job done right.
             </p>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-blue mb-4">
-              Why Choose Assured Roofing?
+              Why Choose Elevate Assured?
             </h2>
           </div>
           

@@ -20,7 +20,7 @@ const ContactPage = () => {
     },
     {
       title: 'Email',
-      value: 'enquiries@assuredrooding.co',
+      value: 'enquiries@assuredroofing.co',
       description: 'Send us an email and we\'ll respond promptly',
       icon: (
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
@@ -28,7 +28,7 @@ const ContactPage = () => {
           <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
         </svg>
       ),
-      link: 'mailto:enquiries@assuredrooding.co'
+      link: 'mailto:enquiries@assuredroofing.co'
     },
     {
       title: 'Address',
@@ -134,7 +134,7 @@ const ContactPage = () => {
               Our Service Area
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              We're proud to serve homeowners and property developers across Bournemouth, Christchurch, Poole, and the wider Dorset area. No matter the size or complexity of your roofing project, you can count on Assured Roofing for quality workmanship and trusted local expertise.
+              We're proud to serve homeowners and property developers across Bournemouth, Christchurch, Poole, and the wider Dorset area. No matter the size or complexity of your roofing project, you can count on Elevate Assured for quality workmanship and trusted local expertise.
             </p>
           </motion.div>
 

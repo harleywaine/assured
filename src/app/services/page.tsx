@@ -29,7 +29,7 @@ const ServicesPage = () => {
       description: 'Roof problems can escalate quickly if left untreated. Our expert repair team acts fast to diagnose the issue and carry out lasting repairs — protecting your home from further damage and avoiding costly future work.',
       features: [
         'Leak detection and repair',
-        'Tile or shingle replacement',
+        'Tile replacement',
         'Flashing repair and resealing',
         'Storm, wind, or impact damage restoration',
         'Structural support and sagging roof correction'
@@ -115,7 +115,7 @@ const ServicesPage = () => {
               Expert Roofing Solutions for Dorset Homes and Developments
             </p>
             <p className="text-lg text-gray-300 max-w-4xl mx-auto">
-              At Assured Roofing, we specialise in delivering reliable, high-quality roofing services that protect your property and add long-term value. Whether you're building from the ground up, repairing storm damage, or investing in preventative maintenance, our experienced team ensures every roof is built to last and finished to perfection.
+              At Elevate Assured, we specialise in delivering reliable, high-quality roofing services that protect your property and add long-term value. Whether you're building from the ground up, repairing storm damage, or investing in preventative maintenance, our experienced team ensures every roof is built to last and finished to perfection.
             </p>
           </motion.div>
         </div>
@@ -338,7 +338,7 @@ const ServicesPage = () => {
             </h2>
             
             <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
-              Whether you're planning a major installation, dealing with an urgent leak, or simply want peace of mind about your roof's condition, Assured Roofing is here to help. Contact our friendly local team today to book a free roof survey or request a no-obligation quote — and take the first step towards a stronger, safer home.
+              Whether you're planning a major installation, dealing with an urgent leak, or simply want peace of mind about your roof's condition, Elevate Assured is here to help. Contact our friendly local team today to book a free roof survey or request a no-obligation quote — and take the first step towards a stronger, safer home.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

@@ -24,14 +24,14 @@ const testimonials: Testimonial[] = [
     id: 2,
     name: "Mark R.",
     location: "Christchurch",
-    content: "We had a leak during a heavy storm, and Assured Roofing were at our door the same day. Fantastic work and honest pricing.",
+    content: "We had a leak during a heavy storm, and Elevate Assured were at our door the same day. Fantastic work and honest pricing.",
     rating: 5,
   },
   {
     id: 3,
     name: "Emma L.",
     location: "Poole",
-    content: "As a property developer, I've worked with many roofing companies — none match the quality and communication of Assured Roofing.",
+    content: "As a property developer, I've worked with many roofing companies — none match the quality and communication of Elevate Assured.",
     rating: 5,
   },
 ];

@@ -4,8 +4,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Blog - Assured Roofing',
-  description: 'Expert roofing tips, maintenance guides, and industry insights from Assured Roofing professionals.',
+  title: 'Blog - Elevate Assured',
+  description: 'Expert roofing tips, maintenance guides, and industry insights from Elevate Assured professionals.',
 };
 
 export default function BlogPage() {
@@ -14,7 +14,7 @@ export default function BlogPage() {
       id: 1,
       title: "How to Choose the Right Roofing Material for Your Home",
       excerpt: "Learn about different roofing materials and how to select the best option for your climate, budget, and aesthetic preferences.",
-      date: "December 15, 2024",
+      date: "15 December 2024",
       category: "Roofing Tips",
       readTime: "5 min read",
       image: "/api/placeholder/400/250"
@@ -23,7 +23,7 @@ export default function BlogPage() {
       id: 2,
       title: "Winter Roof Maintenance: Essential Steps to Protect Your Home",
       excerpt: "Prepare your roof for winter weather with these essential maintenance tips to prevent costly damage and ensure year-round protection.",
-      date: "December 10, 2024",
+      date: "10 December 2024",
       category: "Maintenance",
       readTime: "7 min read",
       image: "/api/placeholder/400/250"
@@ -32,7 +32,7 @@ export default function BlogPage() {
       id: 3,
       title: "Storm Damage Assessment: What to Look For After Severe Weather",
       excerpt: "After a storm, it's crucial to assess your roof for damage. Learn what signs to look for and when to call a professional.",
-      date: "December 5, 2024",
+      date: "5 December 2024",
       category: "Storm Damage",
       readTime: "6 min read",
       image: "/api/placeholder/400/250"
@@ -41,7 +41,7 @@ export default function BlogPage() {
       id: 4,
       title: "The Complete Guide to Roof Ventilation",
       excerpt: "Proper roof ventilation is essential for energy efficiency and preventing moisture damage. Discover how to optimize your roof's ventilation system.",
-      date: "November 28, 2024",
+      date: "28 November 2024",
       category: "Ventilation",
       readTime: "8 min read",
       image: "/api/placeholder/400/250"
@@ -50,7 +50,7 @@ export default function BlogPage() {
       id: 5,
       title: "Understanding Roof Warranties: What's Covered and What's Not",
       excerpt: "Navigate the complexities of roof warranties with our comprehensive guide to understanding coverage, limitations, and how to protect your investment.",
-      date: "November 20, 2024",
+      date: "20 November 2024",
       category: "Warranties",
       readTime: "6 min read",
       image: "/api/placeholder/400/250"
@@ -59,7 +59,7 @@ export default function BlogPage() {
       id: 6,
       title: "Energy-Efficient Roofing: Save Money While Protecting Your Home",
       excerpt: "Discover how energy-efficient roofing materials and techniques can reduce your energy bills while improving your home's comfort and value.",
-      date: "November 15, 2024",
+      date: "15 November 2024",
       category: "Energy Efficiency",
       readTime: "7 min read",
       image: "/api/placeholder/400/250"

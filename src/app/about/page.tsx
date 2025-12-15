@@ -54,7 +54,7 @@ const AboutPage = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              About Assured Roofing
+              About Elevate Assured
             </h1>
             <p className="text-xl text-gray-200 max-w-4xl mx-auto">
               Trusted Local Roofers Dedicated to Quality, Safety, and Service
@@ -78,7 +78,7 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-6 text-gray-600 leading-relaxed">
                 <p>
-                  Assured Roofing was founded with a simple mission: to deliver reliable, high-quality roofing solutions that homeowners and property developers can trust. As a proud family-run business based in Dorset, we've built our reputation on craftsmanship, honesty, and a genuine commitment to protecting the homes in our community.
+                  Elevate Assured was founded with a simple mission: to deliver reliable, high-quality roofing solutions that homeowners and property developers can trust. As a proud family-run business based in Dorset, we've built our reputation on craftsmanship, honesty, and a genuine commitment to protecting the homes in our community.
                 </p>
                 <p>
                   What started as a small local service has grown into one of the most trusted roofing teams in Bournemouth, Christchurch, and Poole. Our experienced roofers bring decades of combined expertise to every project — from small residential repairs to large-scale developments — and we treat every property as if it were our own.
@@ -125,7 +125,7 @@ const AboutPage = () => {
               Built on Quality and Trust
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              At Assured Roofing, we believe that a roof is more than just a structure — it's peace of mind. That's why we focus on delivering workmanship of the highest standard, using only quality materials and proven techniques to ensure your roof stands the test of time.
+              At Elevate Assured, we believe that a roof is more than just a structure — it's peace of mind. That's why we focus on delivering workmanship of the highest standard, using only quality materials and proven techniques to ensure your roof stands the test of time.
             </p>
           </motion.div>
 
@@ -279,7 +279,7 @@ const AboutPage = () => {
             </h2>
             
             <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
-              Your home deserves the very best protection — and we're here to provide it. Contact Assured Roofing today to arrange a free, no-obligation quote and discover why so many Dorset homeowners trust us with their roofs.
+              Your home deserves the very best protection — and we're here to provide it. Contact Elevate Assured today to arrange a free, no-obligation quote and discover why so many Dorset homeowners trust us with their roofs.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

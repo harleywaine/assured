@@ -22,40 +22,29 @@ const blogPosts = {
       <h3>Climate and Weather Conditions</h3>
       <p>Your local climate plays a crucial role in determining the best roofing material. For example:</p>
       <ul>
-        <li><strong>Asphalt shingles</strong> work well in most climates but may not be ideal for extreme heat or cold</li>
-        <li><strong>Metal roofing</strong> is excellent for areas with heavy snowfall or high winds</li>
-        <li><strong>Clay tiles</strong> are perfect for hot, dry climates but may crack in freezing temperatures</li>
+        <li><strong>Concrete tiles</strong> work well in most climates and are particularly suited to British weather</li>
+        <li><strong>Metal roofing</strong> is excellent for areas with heavy rainfall or high winds</li>
+        <li><strong>Clay tiles</strong> are perfect for traditional properties and offer excellent durability</li>
         <li><strong>Slate</strong> is durable in most conditions but can be heavy for some structures</li>
       </ul>
       
       <h3>Budget Considerations</h3>
-      <p>Roofing materials vary significantly in cost. Here's a general price range per square foot:</p>
-      <ul>
-        <li>Asphalt shingles: $1.50 - $4.00</li>
-        <li>Metal roofing: $3.00 - $8.00</li>
-        <li>Clay tiles: $6.00 - $12.00</li>
-        <li>Slate: $8.00 - $15.00</li>
-        <li>Wood shingles: $4.00 - $7.00</li>
-      </ul>
+      <p>Roofing materials vary significantly in cost. It's important to consider both initial investment and long-term value when making your decision.</p>
       
       <h3>Durability and Lifespan</h3>
       <p>Different materials offer varying lifespans:</p>
       <ul>
-        <li>Asphalt shingles: 15-30 years</li>
+        <li>Concrete tiles: 30-50 years</li>
         <li>Metal roofing: 40-70 years</li>
         <li>Clay tiles: 50-100 years</li>
         <li>Slate: 75-200 years</li>
-        <li>Wood shingles: 20-40 years</li>
+        <li>Natural slate: 100+ years</li>
       </ul>
       
       <h2>Popular Roofing Materials</h2>
       
-      <h3>Asphalt Shingles</h3>
-      <p>Asphalt shingles are the most popular roofing material in North America due to their affordability and ease of installation. They come in two main types:</p>
-      <ul>
-        <li><strong>3-tab shingles:</strong> Basic, cost-effective option</li>
-        <li><strong>Architectural shingles:</strong> More durable with better aesthetics</li>
-      </ul>
+      <h3>Concrete Tiles</h3>
+      <p>Concrete tiles are a popular choice for UK properties due to their affordability, durability, and wide range of styles. They offer excellent weather resistance and are well-suited to British climate conditions.</p>
       
       <h3>Metal Roofing</h3>
       <p>Metal roofing is gaining popularity due to its durability and energy efficiency. Common types include:</p>
@@ -74,10 +63,10 @@ const blogPosts = {
       
       <p>Remember, while initial cost is important, consider the total cost of ownership including maintenance, repairs, and replacement over the material's lifespan.</p>
     `,
-    date: "December 15, 2024",
+    date: "15 December 2024",
     category: "Roofing Tips",
     readTime: "5 min read",
-    author: "John Smith"
+    author: "Elevate Assured Team"
   },
   '2': {
     title: "Winter Roof Maintenance: Essential Steps to Protect Your Home",
@@ -87,10 +76,10 @@ const blogPosts = {
       <h2>Pre-Winter Inspection</h2>
       <p>Before winter arrives, conduct a thorough roof inspection to identify and address potential issues:</p>
       
-      <h3>Check for Damaged Shingles</h3>
+      <h3>Check for Damaged Tiles</h3>
       <p>Look for:</p>
       <ul>
-        <li>Cracked, curled, or missing shingles</li>
+        <li>Cracked, slipped, or missing tiles</li>
         <li>Loose or damaged flashing around chimneys and vents</li>
         <li>Signs of water damage or staining</li>
       </ul>
@@ -103,23 +92,23 @@ const blogPosts = {
       
       <h2>Common Winter Roof Problems</h2>
       
-      <h3>Ice Dams</h3>
-      <p>Ice dams form when snow melts and refreezes at the roof's edge. They can cause water to back up under shingles, leading to leaks and damage.</p>
+      <h3>Ice and Frost</h3>
+      <p>In freezing conditions, ice can form on roof surfaces and in gutters. This can cause water to back up under tiles, leading to leaks and damage.</p>
       
-      <h3>Snow Load</h3>
-      <p>Heavy snow accumulation can stress your roof structure. Know your roof's load capacity and remove excess snow when necessary.</p>
+      <h3>Heavy Rainfall</h3>
+      <p>Persistent heavy rain can test your roof's waterproofing. Ensure gutters and drainage systems are clear and functioning properly.</p>
       
       <h3>Thermal Shock</h3>
       <p>Rapid temperature changes can cause materials to expand and contract, potentially leading to cracks and damage.</p>
       
       <h2>Winter Maintenance Tips</h2>
       
-      <h3>Safe Snow Removal</h3>
-      <p>If you need to remove snow from your roof:</p>
+      <h3>Safe Debris Removal</h3>
+      <p>If you need to remove debris from your roof:</p>
       <ul>
-        <li>Use a roof rake from the ground when possible</li>
-        <li>Never use sharp tools that could damage shingles</li>
-        <li>Work in small sections to avoid overloading gutters</li>
+        <li>Use appropriate tools from the ground when possible</li>
+        <li>Never use sharp tools that could damage tiles</li>
+        <li>Work carefully to avoid dislodging tiles</li>
         <li>Consider hiring professionals for steep or high roofs</li>
       </ul>
       
@@ -127,23 +116,23 @@ const blogPosts = {
       <p>Check your attic regularly for signs of leaks, especially after storms or during thaws.</p>
       
       <h3>Keep Vents Clear</h3>
-      <p>Ensure roof vents remain clear of snow and ice to maintain proper ventilation.</p>
+      <p>Ensure roof vents remain clear of debris, leaves, and moss to maintain proper ventilation.</p>
       
       <h2>When to Call a Professional</h2>
       <p>Contact a roofing professional if you notice:</p>
       <ul>
-        <li>Significant ice dam formation</li>
-        <li>Structural concerns about snow load</li>
-        <li>Visible damage or leaks</li>
-        <li>Unusual sounds or movement</li>
+        <li>Persistent leaks or water ingress</li>
+        <li>Structural concerns or visible damage</li>
+        <li>Multiple missing or damaged tiles</li>
+        <li>Signs of rot or deterioration</li>
       </ul>
       
       <p>Regular maintenance and prompt attention to issues can help ensure your roof withstands winter weather and protects your home year-round.</p>
     `,
-    date: "December 10, 2024",
+    date: "10 December 2024",
     category: "Maintenance",
     readTime: "7 min read",
-    author: "Maria Johnson"
+    author: "Elevate Assured Team"
   }
 };
 
@@ -152,12 +141,12 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   
   if (!post) {
     return {
-      title: 'Post Not Found - Assured Roofing Blog',
+      title: 'Post Not Found - Elevate Assured Blog',
     };
   }
 
   return {
-    title: `${post.title} - Assured Roofing Blog`,
+    title: `${post.title} - Elevate Assured Blog`,
     description: post.content.replace(/<[^>]*>/g, '').substring(0, 160) + '...',
   };
 }

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Assured Roofing - Professional Roofing Services in Dorset",
+  title: "Elevate Assured - Professional Roofing Services in Dorset",
   description: "Strong roofs. Safe homes. Assured. Professional roofing services in Bournemouth, Christchurch, and Poole. Expert installations, repairs, and maintenance you can trust.",
 };
 
