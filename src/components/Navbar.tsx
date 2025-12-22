@@ -34,7 +34,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-brand-black shadow-lg"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-14">
           {/* Logo */}
           <Link href="/">
             <Logo className="w-40 h-10 md:w-56 md:h-16" />
@@ -46,15 +46,16 @@ const Navbar = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className="transition-colors duration-200 font-medium text-white hover:text-brand-gold"
+                className="transition-colors duration-200 font-medium text-white hover:text-brand-gold text-sm leading-none"
               >
                 {item.label}
               </Link>
             ))}
             <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-brand-gold text-brand-black px-6 py-2 rounded-lg font-medium hover:bg-brand-gold-dark transition-colors duration-200"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-gradient-to-r from-brand-gold to-brand-gold-dark text-brand-black px-4 py-1 rounded-md hover:from-brand-gold-dark hover:to-brand-gold-dark transition-all duration-200 text-sm font-medium leading-none shadow-sm"
+              style={{ fontSize: '0.875rem' }}
             >
               Get Quote
             </motion.button>
@@ -109,7 +110,7 @@ const Navbar = () => {
                   {item.label}
                 </Link>
               ))}
-              <button className="w-full mt-4 bg-brand-gold text-brand-black px-6 py-2 rounded-lg font-medium hover:bg-brand-gold-dark transition-colors duration-200">
+              <button className="w-full mt-4 bg-brand-gold text-brand-black px-4 py-2 rounded-md font-medium hover:bg-brand-gold-dark transition-colors duration-200 text-sm">
                 Get Quote
               </button>
             </div>
