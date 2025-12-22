@@ -20,7 +20,7 @@ const ContactPage = () => {
     },
     {
       title: 'Email',
-      value: 'enquiries@assuredroofing.co',
+      value: 'will@assuredecosystem.co.uk',
       description: 'Send us an email and we\'ll respond promptly',
       icon: (
         <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
@@ -28,7 +28,7 @@ const ContactPage = () => {
           <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
         </svg>
       ),
-      link: 'mailto:enquiries@assuredroofing.co'
+      link: 'mailto:will@assuredecosystem.co.uk'
     },
     {
       title: 'Address',

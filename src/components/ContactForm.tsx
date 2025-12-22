@@ -11,7 +11,11 @@ interface FormData {
   message: string;
 }
 
-const ContactForm = () => {
+interface ContactFormProps {
+  onSuccess?: () => void;
+}
+
+const ContactForm = ({ onSuccess }: ContactFormProps) => {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -62,6 +66,12 @@ const ContactForm = () => {
           service: '',
           message: '',
         });
+        // Close modal after 2 seconds if onSuccess callback provided
+        if (onSuccess) {
+          setTimeout(() => {
+            onSuccess();
+          }, 2000);
+        }
       } else {
         setSubmitStatus('error');
       }
@@ -73,24 +83,12 @@ const ContactForm = () => {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-      className="bg-white rounded-xl shadow-lg p-8"
-    >
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold text-brand-black mb-4">Book Your Assessment</h2>
-        <p className="text-gray-600">
-          Fill out the form below to book a £99 assessment. We'll get back to you within 24 hours to arrange a visit and provide a detailed quote.
-        </p>
-      </div>
+    <div className="bg-white rounded-xl p-0">
 
-      <form onSubmit={handleSubmit} className="space-y-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="name" className="block text-xs font-medium text-gray-700 mb-1.5">
               Full Name *
             </label>
             <input
@@ -100,13 +98,13 @@ const ContactForm = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-colors duration-200"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-colors duration-200 text-sm"
               placeholder="Your full name"
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="email" className="block text-xs font-medium text-gray-700 mb-1.5">
               Email Address *
             </label>
             <input
@@ -116,15 +114,15 @@ const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-colors duration-200"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-colors duration-200 text-sm"
               placeholder="your.email@example.com"
             />
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="phone" className="block text-xs font-medium text-gray-700 mb-1.5">
               Phone Number *
             </label>
             <input
@@ -134,13 +132,13 @@ const ContactForm = () => {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-colors duration-200"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-colors duration-200 text-sm"
               placeholder="07918 291605"
             />
           </div>
 
           <div>
-            <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="service" className="block text-xs font-medium text-gray-700 mb-1.5">
               Service Needed *
             </label>
             <select
@@ -149,7 +147,7 @@ const ContactForm = () => {
               value={formData.service}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-colors duration-200"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-colors duration-200 text-sm"
             >
               <option value="">Select a service</option>
               {services.map((service) => (
@@ -162,7 +160,7 @@ const ContactForm = () => {
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="message" className="block text-xs font-medium text-gray-700 mb-1.5">
             Project Details
           </label>
           <textarea
@@ -170,8 +168,8 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            rows={4}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent transition-colors duration-200"
+            rows={3}
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent transition-colors duration-200 text-sm"
             placeholder="Tell us about your project, timeline, or any specific requirements..."
           />
         </div>
@@ -180,7 +178,7 @@ const ContactForm = () => {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-brand-gold text-brand-black p-4 rounded-lg"
+            className="bg-brand-gold text-brand-black p-3 rounded-lg text-sm"
           >
             Thank you! We've received your message and will get back to you within 24 hours.
           </motion.div>
@@ -190,7 +188,7 @@ const ContactForm = () => {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-red-500 text-white p-4 rounded-lg"
+            className="bg-red-500 text-white p-3 rounded-lg text-sm"
           >
             Sorry, there was an error sending your message. Please try again or call us directly.
           </motion.div>
@@ -201,29 +199,29 @@ const ContactForm = () => {
           disabled={isSubmitting}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="w-full bg-brand-black text-white py-4 rounded-lg font-semibold hover:bg-brand-dark-gray transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-brand-black text-white py-2.5 rounded-lg font-semibold hover:bg-brand-dark-gray transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed text-sm"
         >
           {isSubmitting ? 'Sending...' : 'Book Assessment (£99)'}
         </motion.button>
       </form>
 
-      <div className="mt-8 pt-6 border-t border-gray-200">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <div className="mt-4 pt-4 border-t border-gray-200">
+        <div className="grid grid-cols-3 gap-4 text-center">
           <div>
-            <div className="text-2xl font-bold text-brand-black mb-2">24/7</div>
-            <div className="text-gray-600">Emergency Service</div>
+            <div className="text-lg font-bold text-brand-black mb-1">24/7</div>
+            <div className="text-xs text-gray-600">Emergency</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-brand-black mb-2">£99</div>
-            <div className="text-gray-600">Assessment</div>
+            <div className="text-lg font-bold text-brand-black mb-1">£99</div>
+            <div className="text-xs text-gray-600">Assessment</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-brand-black mb-2">100%</div>
-            <div className="text-gray-600">Satisfaction</div>
+            <div className="text-lg font-bold text-brand-black mb-1">100%</div>
+            <div className="text-xs text-gray-600">Satisfaction</div>
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

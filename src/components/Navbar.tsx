@@ -4,10 +4,12 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Logo from './Logo';
+import ContactModal from './ContactModal';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,6 +54,7 @@ const Navbar = () => {
               </Link>
             ))}
             <motion.button
+              onClick={() => setIsModalOpen(true)}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="bg-gradient-to-r from-brand-gold to-brand-gold-dark text-brand-black px-4 py-1 rounded-md hover:from-brand-gold-dark hover:to-brand-gold-dark transition-all duration-200 text-sm font-medium leading-none shadow-sm"
@@ -110,13 +113,22 @@ const Navbar = () => {
                   {item.label}
                 </Link>
               ))}
-              <button className="w-full mt-4 bg-brand-gold text-brand-black px-4 py-2 rounded-md font-medium hover:bg-brand-gold-dark transition-colors duration-200 text-sm">
+              <button 
+                onClick={() => {
+                  setIsModalOpen(true);
+                  setIsMobileMenuOpen(false);
+                }}
+                className="w-full mt-4 bg-brand-gold text-brand-black px-4 py-2 rounded-md font-medium hover:bg-brand-gold-dark transition-colors duration-200 text-sm"
+              >
                 Get Quote
               </button>
             </div>
           </motion.div>
         )}
       </div>
+      
+      {/* Contact Modal */}
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </motion.nav>
   );
 };

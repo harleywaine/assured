@@ -152,9 +152,9 @@ const ServicesPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group block"
+                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group block h-full flex flex-col"
               >
-                <div className="p-8">
+                <div className="p-8 flex flex-col flex-grow">
                   {/* Icon and Title */}
                   <div className="flex items-center mb-6">
                     <div className="w-14 h-14 bg-brand-gold rounded-lg flex items-center justify-center mr-4 text-brand-black group-hover:bg-brand-gold-dark group-hover:text-white transition-all duration-300">
@@ -169,7 +169,7 @@ const ServicesPage = () => {
                     {service.subtitle}
                   </p>
                   
-                  <div className="space-y-3 mb-8">
+                  <div className="space-y-3 mb-8 flex-grow">
                     {service.features.slice(0, 2).map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-start">
                         <svg className="w-4 h-4 text-brand-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -185,7 +185,7 @@ const ServicesPage = () => {
                     )}
                   </div>
                   
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mt-auto">
                     <div className="text-brand-gold body-text-sm font-medium group-hover:text-brand-black transition-colors duration-300">
                       Get quote for {service.title.replace('Roof ', '')} →
                     </div>
@@ -208,9 +208,9 @@ const ServicesPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: (index + 3) * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group block w-full md:w-[calc(50%-1rem)] lg:w-[400px] max-w-md"
+                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group block w-full md:w-[calc(50%-1rem)] lg:w-[400px] max-w-md h-full flex flex-col"
               >
-                <div className="p-8">
+                <div className="p-8 flex flex-col flex-grow">
                   {/* Icon and Title */}
                   <div className="flex items-center mb-6">
                     <div className="w-14 h-14 bg-brand-gold rounded-lg flex items-center justify-center mr-4 text-brand-black group-hover:bg-brand-gold-dark group-hover:text-white transition-all duration-300">
@@ -225,7 +225,7 @@ const ServicesPage = () => {
                     {service.subtitle}
                   </p>
                   
-                  <div className="space-y-3 mb-8">
+                  <div className="space-y-3 mb-8 flex-grow">
                     {service.features.slice(0, 2).map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-start">
                         <svg className="w-4 h-4 text-brand-gold mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -241,7 +241,7 @@ const ServicesPage = () => {
                     )}
                   </div>
                   
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mt-auto">
                     <div className="text-brand-gold body-text-sm font-medium group-hover:text-brand-black transition-colors duration-300">
                       Get quote for {service.title.replace('Roof ', '')} →
                     </div>
