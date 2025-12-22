@@ -49,7 +49,7 @@ const ContactPage = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 bg-brand-black overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 bg-brand-black overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -70,11 +70,11 @@ const ContactPage = () => {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="h1 text-white mb-8">
+            <h1 className="h1 text-white mb-6 md:mb-8">
               Contact Us
             </h1>
-            <div className="w-24 h-1 bg-brand-gold mx-auto mb-10"></div>
-            <p className="lead text-gray-200 max-w-4xl mx-auto font-medium">
+            <div className="w-24 h-1 bg-brand-gold mx-auto mb-6 md:mb-10"></div>
+            <p className="lead text-gray-200 max-w-4xl mx-auto font-medium px-4">
               Let's Get Your Roof Sorted, Quickly, Safely, and Professionally
             </p>
           </motion.div>
@@ -91,10 +91,10 @@ const ContactPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
+            <h2 className="h2 text-brand-black mb-4 md:mb-6">
               Get in Touch Today
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="body-text-lg text-gray-600 max-w-4xl mx-auto">
               Whether you're planning a new roof, dealing with a leak, or just want peace of mind about your property, our team is here to help. Book a £99 assessment and we'll get back to you promptly to discuss your project and arrange a visit at a time that suits you.
             </p>
           </motion.div>
@@ -114,10 +114,10 @@ const ContactPage = () => {
                 <div className="w-16 h-16 bg-brand-gold rounded-full flex items-center justify-center mx-auto mb-6 text-brand-black group-hover:bg-brand-gold-dark group-hover:text-white transition-all duration-300">
                   {method.icon}
                 </div>
-                <h3 className="text-xl font-bold text-brand-black mb-3">
+                <h3 className="h4 text-brand-black mb-3">
                   {method.title}
                 </h3>
-                <p className="text-lg font-medium text-gray-700 mb-3">
+                <p className="body-text font-medium text-gray-700 mb-3">
                   {method.value}
                 </p>
                 <p className="text-gray-600 text-sm">
@@ -139,10 +139,10 @@ const ContactPage = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
+              <h2 className="h2 text-brand-black mb-4 md:mb-6">
                 Send Us a Message
               </h2>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p className="body-text-lg text-gray-600 mb-6 md:mb-8">
                 Fill out the contact form with a few details about your project, and one of our friendly team members will be in touch shortly. Book a £99 assessment to get expert advice and a detailed quote for your roofing project.
               </p>
 

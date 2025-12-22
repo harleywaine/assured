@@ -26,7 +26,7 @@ const AboutPage = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 bg-brand-black overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 bg-brand-black overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -47,20 +47,20 @@ const AboutPage = () => {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="h1 text-white mb-8">
+            <h1 className="h1 text-white mb-6 md:mb-8">
               About Us
             </h1>
-            <div className="w-24 h-1 bg-brand-gold mx-auto mb-10"></div>
-            <p className="lead text-gray-200 max-w-4xl mx-auto mb-8 font-medium">
+            <div className="w-24 h-1 bg-brand-gold mx-auto mb-6 md:mb-10"></div>
+            <p className="lead text-gray-200 max-w-4xl mx-auto mb-6 md:mb-8 font-medium px-4">
               Trusted Local Roofers Dedicated to Quality, Safety, and Service
             </p>
-            <p className="body-text-lg text-gray-300 max-w-3xl mx-auto">
+            <p className="body-text-lg text-gray-300 max-w-3xl mx-auto px-4">
               At Elevate Assured, we're all about providing honest, reliable roofing services you can trust. With over 20 years of experience in the trade, we've built our reputation on quality workmanship, friendly service, and roofs that last.
             </p>
-            <p className="body-text-lg text-gray-300 max-w-4xl mx-auto mb-6">
+            <p className="body-text-lg text-gray-300 max-w-4xl mx-auto mb-4 md:mb-6 px-4">
               Whether you need a simple repair, a fresh installation, or just some expert advice, our team is here to help. We take pride in every job we do, big or small, and treat every home as if it were our own.
             </p>
-            <p className="body-text-lg text-gray-300 max-w-4xl mx-auto">
+            <p className="body-text-lg text-gray-300 max-w-4xl mx-auto px-4">
               With Elevate Assured, you get more than just a roofing company, you get a team that genuinely cares about protecting your home and giving you peace of mind for years to come.
             </p>
           </motion.div>

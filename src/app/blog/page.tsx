@@ -81,7 +81,7 @@ export default function BlogPage() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 bg-brand-black overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 bg-brand-black overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -97,11 +97,11 @@ export default function BlogPage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="h1 text-white mb-8">
+            <h1 className="h1 text-white mb-6 md:mb-8">
               Roofing Blog
             </h1>
-            <div className="w-24 h-1 bg-brand-gold mx-auto mb-10"></div>
-            <p className="lead text-gray-200 max-w-4xl mx-auto font-medium">
+            <div className="w-24 h-1 bg-brand-gold mx-auto mb-6 md:mb-10"></div>
+            <p className="lead text-gray-200 max-w-4xl mx-auto font-medium px-4">
               Expert tips, maintenance guides, and industry insights to help you protect your home 
               and make informed decisions about your roofing needs.
             </p>

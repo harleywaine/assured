@@ -103,7 +103,7 @@ const ServicesPage = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 bg-brand-black overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 bg-brand-black overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -124,14 +124,14 @@ const ServicesPage = () => {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="h1 text-white mb-8">
+            <h1 className="h1 text-white mb-6 md:mb-8">
               Our Services
             </h1>
-            <div className="w-24 h-1 bg-brand-gold mx-auto mb-10"></div>
-            <p className="lead text-gray-200 max-w-4xl mx-auto mb-8 font-medium">
+            <div className="w-24 h-1 bg-brand-gold mx-auto mb-6 md:mb-10"></div>
+            <p className="lead text-gray-200 max-w-4xl mx-auto mb-6 md:mb-8 font-medium px-4">
               Expert Roofing Solutions for Dorset and Hampshire
             </p>
-            <p className="body-text-lg text-gray-300 max-w-3xl mx-auto">
+            <p className="body-text-lg text-gray-300 max-w-3xl mx-auto px-4">
               At Elevate Assured, we specialise in delivering reliable, high-quality roofing services that protect your property and add long-term value. Whether you're building from the ground up, repairing storm damage, or investing in preventative maintenance, our experienced team ensures every roof is built to last and finished to perfection.
             </p>
           </motion.div>
@@ -139,7 +139,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Services Overview */}
-      <section className="py-20 bg-white">
+      <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
@@ -187,7 +187,7 @@ const ServicesPage = () => {
                   
                   <div className="flex items-center justify-between">
                     <div className="text-brand-gold body-text-sm font-medium group-hover:text-brand-black transition-colors duration-300">
-                      Get quote for {service.title.split(' ')[0]} →
+                      Get quote for {service.title.replace('Roof ', '')} →
                     </div>
                     <div className="text-xs text-gray-500">
                       £99 assessment
@@ -198,7 +198,7 @@ const ServicesPage = () => {
             ))}
             
             {/* Bottom 2 cards - centered using flexbox approach */}
-            <div className="lg:col-span-3 flex justify-center gap-8">
+            <div className="lg:col-span-3 flex flex-col md:flex-row justify-center gap-6 md:gap-8">
               {services.slice(3, 5).map((service, index) => (
                 <motion.a
                   key={service.title}
@@ -207,7 +207,7 @@ const ServicesPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: (index + 3) * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group block w-full max-w-sm"
+                  className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group block w-full md:max-w-sm"
                 >
                   <div className="p-8">
                     {/* Icon and Title */}

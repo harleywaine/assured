@@ -19,7 +19,7 @@ const ServiceCard = ({ title, description, features, index }: ServiceCardProps) 
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
       whileHover={{ y: -5 }}
-      className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-8 border border-gray-200 h-full flex flex-col"
+      className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 md:p-8 border border-gray-200 h-full flex flex-col"
     >
       {/* Title */}
       <h3 className="h3 text-brand-black mb-3">{title}</h3>

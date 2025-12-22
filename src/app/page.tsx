@@ -83,9 +83,9 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
+          <div className="text-center mb-12 md:mb-20">
             <h2 className="h2 text-brand-black mb-4">
               Roofing Services
             </h2>
@@ -95,7 +95,7 @@ export default function Home() {
           </div>
           
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 mb-8">
             {/* First 3 cards */}
             {services.slice(0, 3).map((service, index) => (
               <ServiceCard
@@ -110,9 +110,9 @@ export default function Home() {
             ))}
             
             {/* Bottom 2 cards - centered using flexbox approach */}
-            <div className="lg:col-span-3 flex justify-center gap-10">
+            <div className="lg:col-span-3 flex flex-col md:flex-row justify-center gap-6 md:gap-10">
               {services.slice(3, 5).map((service, index) => (
-                <div key={service.title} className="w-full max-w-md">
+                <div key={service.title} className="w-full md:max-w-md">
                   <ServiceCard
                     title={service.title}
                     description={service.description}
@@ -181,7 +181,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-brand-black">
+      <section className="py-16 md:py-20 bg-brand-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="h2 text-white mb-8">
             Book Your Assessment Today
@@ -192,13 +192,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="bg-brand-gold text-brand-black px-10 py-4 rounded-lg text-lg btn hover:bg-brand-gold-dark transition-colors duration-200 shadow-lg"
+              className="bg-brand-gold text-brand-black px-6 py-3 md:px-10 md:py-4 rounded-lg text-base md:text-lg btn hover:bg-brand-gold-dark transition-colors duration-200 shadow-lg"
             >
               Book an Assessment
           </a>
           <a
               href="/contact"
-              className="border-2 border-white text-white px-10 py-4 rounded-lg text-lg btn hover:bg-white hover:text-brand-black transition-colors duration-200"
+              className="border-2 border-white text-white px-6 py-3 md:px-10 md:py-4 rounded-lg text-base md:text-lg btn hover:bg-white hover:text-brand-black transition-colors duration-200"
             >
               Request a Quote
             </a>
