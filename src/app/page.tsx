@@ -108,21 +108,21 @@ export default function Home() {
                 index={index}
               />
             ))}
-            
-            {/* Bottom 2 cards - centered using flexbox approach */}
-            <div className="lg:col-span-3 flex flex-col md:flex-row justify-center gap-6 md:gap-10">
-              {services.slice(3, 5).map((service, index) => (
-                <div key={service.title} className="w-full md:max-w-md">
-                  <ServiceCard
-                    title={service.title}
-                    description={service.description}
-                    features={service.features}
-                    price={service.price}
-                    index={index + 3}
-                  />
-                </div>
-              ))}
-            </div>
+          </div>
+          
+          {/* Bottom 2 cards - separate container */}
+          <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-10">
+            {services.slice(3, 5).map((service, index) => (
+              <div key={service.title} className="w-full md:w-[calc(50%-1.25rem)] lg:w-[400px] max-w-md">
+                <ServiceCard
+                  title={service.title}
+                  description={service.description}
+                  features={service.features}
+                  price={service.price}
+                  index={index + 3}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
