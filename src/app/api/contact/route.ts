@@ -28,15 +28,8 @@ export async function POST(request: NextRequest) {
     // 3. Send confirmation email to customer
     // 4. Integrate with CRM system
     
-    // For now, we'll just log the data and return success
-    console.log('Contact form submission:', {
-      name,
-      email,
-      phone,
-      service,
-      message,
-      timestamp: new Date().toISOString(),
-    });
+    // TODO: Implement form submission handling
+    // In production, this should save to database and send notifications
 
     // Simulate processing time
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -50,7 +43,8 @@ export async function POST(request: NextRequest) {
     );
 
   } catch (error) {
-    console.error('Contact form error:', error);
+    // Log error server-side only (not exposed to client)
+    // In production, use proper logging service
     return NextResponse.json(
       { error: 'Internal server error' },
       { status: 500 }

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -224,11 +225,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="h-64 overflow-hidden">
-                <img
+              <div className="relative h-64 overflow-hidden">
+                <Image
                   src="/completedworks/28036a99-b975-4ece-9611-a9d763d9e17d 2.JPG"
                   alt="Storm Damage Assessment"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-6">
@@ -250,11 +252,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             </article>
 
             <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 overflow-hidden">
-                <img
+              <div className="relative h-48 overflow-hidden">
+                <Image
                   src="/completedworks/D63704C6-3C52-4574-86F9-07B7509533D5.JPG"
                   alt="Roof Ventilation Guide"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-6">
@@ -276,11 +279,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             </article>
 
             <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 overflow-hidden">
-                <img
+              <div className="relative h-48 overflow-hidden">
+                <Image
                   src="/completedworks/69A13C13-6DA3-4E33-B1B4-6C5C864A9AE3.JPG"
                   alt="Understanding Roof Warranties"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="p-6">

@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Hero = () => {
@@ -8,11 +9,13 @@ const Hero = () => {
     <section className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center bg-brand-black overflow-hidden pt-24 pb-16 md:pt-0 md:pb-0">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src="/Roof Hero.png"
           alt=""
-          className="w-full h-full object-cover opacity-35"
+          fill
+          className="object-cover opacity-35"
           aria-hidden="true"
+          priority
         />
       </div>
       

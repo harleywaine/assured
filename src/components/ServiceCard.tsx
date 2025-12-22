@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 interface ServiceCardProps {
   icon?: React.ReactNode;
@@ -48,13 +49,15 @@ const ServiceCard = ({ title, description, features, index }: ServiceCardProps) 
       </ul>
 
       {/* CTA Button */}
-      <motion.button
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-        className="w-full bg-brand-black text-white py-3.5 rounded-lg btn hover:bg-gray-800 transition-colors duration-200 mt-auto"
-      >
-        Learn More
-      </motion.button>
+      <Link href="/services">
+        <motion.button
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className="w-full bg-brand-black text-white py-3.5 rounded-lg btn hover:bg-gray-800 transition-colors duration-200 mt-auto"
+        >
+          Learn More
+        </motion.button>
+      </Link>
     </motion.div>
   );
 };

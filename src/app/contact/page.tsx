@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
@@ -52,11 +54,13 @@ const ContactPage = () => {
       <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 bg-brand-black overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/Roof Hero.png"
             alt=""
-            className="w-full h-full object-cover opacity-35"
+            fill
+            className="object-cover opacity-35"
             aria-hidden="true"
+            priority
           />
         </div>
         
@@ -148,13 +152,15 @@ const ContactPage = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-brand-gold text-brand-black px-6 py-3 rounded-lg font-semibold hover:bg-brand-gold-dark transition-colors duration-200 shadow-lg hover:shadow-xl"
-                >
-                  Book an Assessment (£99)
-                </motion.button>
+                <Link href="#contact-form">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-brand-gold text-brand-black px-6 py-3 rounded-lg font-semibold hover:bg-brand-gold-dark transition-colors duration-200 shadow-lg hover:shadow-xl"
+                  >
+                    Book an Assessment (£99)
+                  </motion.button>
+                </Link>
               </div>
 
               {/* Additional Info */}
@@ -197,7 +203,9 @@ const ContactPage = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <ContactForm />
+              <div id="contact-form">
+                <ContactForm />
+              </div>
             </motion.div>
           </div>
         </div>

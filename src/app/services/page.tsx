@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -106,11 +108,13 @@ const ServicesPage = () => {
       <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 bg-brand-black overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/Roof Hero.png"
             alt=""
-            className="w-full h-full object-cover opacity-35"
+            fill
+            className="object-cover opacity-35"
             aria-hidden="true"
+            priority
           />
         </div>
         
@@ -322,10 +326,11 @@ const ServicesPage = () => {
 
                     {/* Visual Element */}
                     <div className="relative rounded-2xl overflow-hidden h-[500px]">
-                      <img
+                      <Image
                         src={service.image}
                         alt={`${service.title} - Completed work by Elevate Assured`}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
                       />
                     </div>
                   </div>
@@ -355,21 +360,25 @@ const ServicesPage = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-brand-gold text-brand-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-gold-dark transition-colors duration-200 shadow-lg hover:shadow-xl"
-              >
-                Book an Assessment
-              </motion.button>
+              <Link href="/contact">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-brand-gold text-brand-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-gold-dark transition-colors duration-200 shadow-lg hover:shadow-xl"
+                >
+                  Book an Assessment
+                </motion.button>
+              </Link>
               
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-brand-black text-brand-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-black hover:text-white transition-colors duration-200"
-              >
-                Request a Quote
-              </motion.button>
+              <Link href="/contact">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="border-2 border-brand-black text-brand-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-black hover:text-white transition-colors duration-200"
+                >
+                  Request a Quote
+                </motion.button>
+              </Link>
             </div>
 
             {/* Trust Indicators */}

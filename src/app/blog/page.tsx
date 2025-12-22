@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -84,11 +85,13 @@ export default function BlogPage() {
       <section className="relative pt-24 md:pt-32 pb-16 md:pb-24 bg-brand-black overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/Roof Hero.png"
             alt=""
-            className="w-full h-full object-cover opacity-35"
+            fill
+            className="object-cover opacity-35"
             aria-hidden="true"
+            priority
           />
         </div>
         
@@ -132,11 +135,12 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <article key={post.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="h-64 overflow-hidden">
-                  <img
+                <div className="relative h-64 overflow-hidden">
+                  <Image
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 
@@ -172,12 +176,12 @@ export default function BlogPage() {
             ))}
           </div>
 
-          {/* Load More Button */}
-          <div className="text-center mt-12">
+          {/* Load More Button - Hidden for now as all posts are shown */}
+          {/* <div className="text-center mt-12">
             <button className="bg-brand-black text-white px-8 py-3 rounded-lg btn hover:bg-gray-800 transition-colors duration-200">
               Load More Posts
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -197,9 +201,11 @@ export default function BlogPage() {
               placeholder="Enter your email"
               className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent"
             />
-            <button className="bg-brand-gold text-brand-black px-6 py-3 rounded-lg btn hover:bg-brand-gold-dark transition-colors duration-200">
-              Subscribe
-            </button>
+            <Link href="/contact">
+              <button className="bg-brand-gold text-brand-black px-6 py-3 rounded-lg btn hover:bg-brand-gold-dark transition-colors duration-200">
+                Subscribe
+              </button>
+            </Link>
           </div>
         </div>
       </section>

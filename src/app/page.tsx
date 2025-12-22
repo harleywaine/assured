@@ -1,8 +1,19 @@
+import type { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import ServiceCard from '@/components/ServiceCard';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 import Footer from '@/components/Footer';
+
+export const metadata: Metadata = {
+  title: 'Elevate Assured - Professional Roofing Services in Dorset & Hampshire',
+  description: 'Professional roofing services you can trust. Expert installations, repairs, and maintenance across Dorset and Hampshire. Book your £99 assessment today.',
+  openGraph: {
+    title: 'Elevate Assured - Professional Roofing Services',
+    description: 'Expert roofing solutions for homes and businesses across Dorset and Hampshire.',
+    type: 'website',
+  },
+};
 
 export default function Home() {
   const services = [
