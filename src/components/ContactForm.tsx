@@ -81,9 +81,9 @@ const ContactForm = () => {
       className="bg-white rounded-xl shadow-lg p-8"
     >
       <div className="mb-8">
-        <h2 className="text-3xl font-bold text-brand-blue mb-4">Get Your Free Quote</h2>
+        <h2 className="text-3xl font-bold text-brand-black mb-4">Book Your Assessment</h2>
         <p className="text-gray-600">
-          Fill out the form below and we'll get back to you within 24 hours with a detailed estimate.
+          Fill out the form below to book a £99 assessment. We'll get back to you within 24 hours to arrange a visit and provide a detailed quote.
         </p>
       </div>
 
@@ -100,7 +100,7 @@ const ContactForm = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-green focus:border-transparent transition-colors duration-200"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-colors duration-200"
               placeholder="Your full name"
             />
           </div>
@@ -116,7 +116,7 @@ const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-green focus:border-transparent transition-colors duration-200"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-colors duration-200"
               placeholder="your.email@example.com"
             />
           </div>
@@ -134,7 +134,7 @@ const ContactForm = () => {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-green focus:border-transparent transition-colors duration-200"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-colors duration-200"
               placeholder="07918 291605"
             />
           </div>
@@ -149,7 +149,7 @@ const ContactForm = () => {
               value={formData.service}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-green focus:border-transparent transition-colors duration-200"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-colors duration-200"
             >
               <option value="">Select a service</option>
               {services.map((service) => (
@@ -180,7 +180,7 @@ const ContactForm = () => {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-brand-green-light text-white p-4 rounded-lg"
+            className="bg-brand-gold text-brand-black p-4 rounded-lg"
           >
             Thank you! We've received your message and will get back to you within 24 hours.
           </motion.div>
@@ -201,24 +201,24 @@ const ContactForm = () => {
           disabled={isSubmitting}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="w-full bg-brand-blue text-white py-4 rounded-lg font-semibold hover:bg-brand-blue-dark transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-brand-black text-white py-4 rounded-lg font-semibold hover:bg-brand-dark-gray transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {isSubmitting ? 'Sending...' : 'Get Free Quote'}
+          {isSubmitting ? 'Sending...' : 'Book Assessment (£99)'}
         </motion.button>
       </form>
 
       <div className="mt-8 pt-6 border-t border-gray-200">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
           <div>
-            <div className="text-2xl font-bold text-brand-blue mb-2">24/7</div>
+            <div className="text-2xl font-bold text-brand-black mb-2">24/7</div>
             <div className="text-gray-600">Emergency Service</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-brand-blue mb-2">Free</div>
-            <div className="text-gray-600">Estimates</div>
+            <div className="text-2xl font-bold text-brand-black mb-2">£99</div>
+            <div className="text-gray-600">Assessment</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-brand-blue mb-2">100%</div>
+            <div className="text-2xl font-bold text-brand-black mb-2">100%</div>
             <div className="text-gray-600">Satisfaction</div>
           </div>
         </div>

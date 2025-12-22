@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import Logo from './Logo';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -71,64 +70,25 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-brand-blue text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="lg:col-span-1">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <Link href="/" className="mb-6">
-                <Logo className="w-40 h-12" isScrolled={false} />
-              </Link>
-              
-              <p className="text-gray-300 mb-6 leading-relaxed">
-                Professional roofing services you can trust. Protecting your home with expert craftsmanship and quality materials for over 25 years.
-              </p>
-
-              <div className="space-y-3">
-                <div className="flex items-center text-gray-300">
-                  <svg className="w-5 h-5 mr-3 text-brand-green-light" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                  </svg>
-                  <span>Bournemouth, Dorset, UK</span>
-                </div>
-                <div className="flex items-center text-gray-300">
-                  <svg className="w-5 h-5 mr-3 text-brand-green-light" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                  </svg>
-                  <span>07918 291605</span>
-                </div>
-                <div className="flex items-center text-gray-300">
-                  <svg className="w-5 h-5 mr-3 text-brand-green-light" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                  </svg>
-                  <span>enquiries@assuredroofing.co</span>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Services */}
-          <div>
+    <footer className="bg-brand-black text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Top Section: Services | Logo | Company */}
+        <div className="flex flex-col md:flex-row justify-center items-start gap-8 md:gap-16 lg:gap-20 mb-8">
+          {/* Services - Left */}
+          <div className="w-full md:w-auto max-w-xs mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-lg font-semibold mb-6">Services</h3>
-              <ul className="space-y-3">
+              <h3 className="h4 text-white mb-3 text-center md:text-left">Services</h3>
+              <ul className="space-y-1">
                 {footerLinks.services.map((link) => (
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-gray-300 hover:text-brand-green-light transition-colors duration-200"
+                      className="body-text-sm text-gray-300 hover:text-brand-gold transition-colors duration-200"
                     >
                       {link.label}
                     </Link>
@@ -138,45 +98,39 @@ const Footer = () => {
             </motion.div>
           </div>
 
-          {/* Company */}
-          <div>
+          {/* Logo - Center */}
+          <div className="flex justify-center items-start flex-shrink-0 w-full md:w-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <Link href="/" className="block">
+                <img
+                  src="/Stacked Logo.svg"
+                  alt="Elevate Assured Logo"
+                  className="h-48 w-auto"
+                />
+              </Link>
+            </motion.div>
+          </div>
+
+          {/* Company - Right */}
+          <div className="w-full md:w-auto max-w-xs mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-lg font-semibold mb-6">Company</h3>
-              <ul className="space-y-3">
+              <h3 className="h4 text-white mb-3 text-center md:text-left">Company</h3>
+              <ul className="space-y-1">
                 {footerLinks.company.map((link) => (
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-gray-300 hover:text-brand-green-light transition-colors duration-200"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="text-lg font-semibold mb-6">Resources</h3>
-              <ul className="space-y-3">
-                {footerLinks.resources.map((link) => (
-                  <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      className="text-gray-300 hover:text-brand-green-light transition-colors duration-200"
+                      className="body-text-sm text-gray-300 hover:text-brand-gold transition-colors duration-200"
                     >
                       {link.label}
                     </Link>
@@ -187,27 +141,58 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Section */}
+        {/* Contact Info - Horizontal */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="border-t border-gray-800 pt-4 mb-4"
+        >
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8">
+            <div className="flex items-center text-gray-300">
+              <svg className="w-5 h-5 mr-3 text-brand-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+              </svg>
+              <span className="body-text-sm">Dorset and Hampshire, UK</span>
+            </div>
+            <div className="flex items-center text-gray-300">
+              <svg className="w-5 h-5 mr-3 text-brand-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              <span className="body-text-sm">07918 291605</span>
+            </div>
+            <div className="flex items-center text-gray-300">
+              <svg className="w-5 h-5 mr-3 text-brand-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              <span className="body-text-sm">enquiries@assuredroofing.co</span>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Bottom Section - Copyright & Social */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="border-t border-gray-700 mt-12 pt-8"
+          className="border-t border-gray-800 pt-4"
         >
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-300 mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="body-text-sm text-gray-400 text-center md:text-left">
               © {currentYear} Elevate Assured. All rights reserved.
             </div>
             
-            <div className="flex space-x-6">
+            <div className="flex space-x-5">
               {socialLinks.map((social) => (
                 <motion.a
                   key={social.name}
                   href={social.href}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-gray-300 hover:text-brand-green-light transition-colors duration-200"
+                  className="text-gray-400 hover:text-brand-gold transition-colors duration-200"
                   aria-label={social.name}
                 >
                   {social.icon}

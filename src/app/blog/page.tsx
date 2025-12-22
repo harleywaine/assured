@@ -17,7 +17,7 @@ export default function BlogPage() {
       date: "15 December 2024",
       category: "Roofing Tips",
       readTime: "5 min read",
-      image: "/api/placeholder/400/250"
+      image: "/completedworks/1D1F9741-DD77-48A3-AE52-7D0D080777CD.JPG"
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ export default function BlogPage() {
       date: "10 December 2024",
       category: "Maintenance",
       readTime: "7 min read",
-      image: "/api/placeholder/400/250"
+      image: "/completedworks/1D2AC7C1-6F35-42A0-A856-D48A44DD0C7A 2.JPG"
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ export default function BlogPage() {
       date: "5 December 2024",
       category: "Storm Damage",
       readTime: "6 min read",
-      image: "/api/placeholder/400/250"
+      image: "/completedworks/28036a99-b975-4ece-9611-a9d763d9e17d 2.JPG"
     },
     {
       id: 4,
@@ -44,7 +44,7 @@ export default function BlogPage() {
       date: "28 November 2024",
       category: "Ventilation",
       readTime: "8 min read",
-      image: "/api/placeholder/400/250"
+      image: "/completedworks/D63704C6-3C52-4574-86F9-07B7509533D5.JPG"
     },
     {
       id: 5,
@@ -53,7 +53,7 @@ export default function BlogPage() {
       date: "20 November 2024",
       category: "Warranties",
       readTime: "6 min read",
-      image: "/api/placeholder/400/250"
+      image: "/completedworks/69A13C13-6DA3-4E33-B1B4-6C5C864A9AE3.JPG"
     },
     {
       id: 6,
@@ -62,7 +62,7 @@ export default function BlogPage() {
       date: "15 November 2024",
       category: "Energy Efficiency",
       readTime: "7 min read",
-      image: "/api/placeholder/400/250"
+      image: "/completedworks/abc739bb-2aa2-43a8-820f-b2ec7128b72a.JPG"
     }
   ];
 
@@ -81,15 +81,31 @@ export default function BlogPage() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-navy to-navy-dark py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Roofing Blog
-          </h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Expert tips, maintenance guides, and industry insights to help you protect your home 
-            and make informed decisions about your roofing needs.
-          </p>
+      <section className="relative pt-32 pb-24 bg-brand-black overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/Roof Hero.png"
+            alt=""
+            className="w-full h-full object-cover opacity-35"
+            aria-hidden="true"
+          />
+        </div>
+        
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-brand-black/75"></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="h1 text-white mb-8">
+              Roofing Blog
+            </h1>
+            <div className="w-24 h-1 bg-brand-gold mx-auto mb-10"></div>
+            <p className="lead text-gray-200 max-w-4xl mx-auto font-medium">
+              Expert tips, maintenance guides, and industry insights to help you protect your home 
+              and make informed decisions about your roofing needs.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -103,7 +119,7 @@ export default function BlogPage() {
                 key={category}
                 className={`px-6 py-3 rounded-full font-medium transition-colors duration-200 ${
                   category === "All Posts"
-                    ? "bg-green text-white"
+                    ? "bg-brand-gold text-brand-black"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
@@ -116,30 +132,29 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <article key={post.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="h-48 bg-gray-200 flex items-center justify-center">
-                  <div className="text-center">
-                    <svg className="w-12 h-12 text-gray-400 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-gray-500 text-sm">Blog Image</p>
-                  </div>
+                <div className="h-64 overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="bg-green-light text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-brand-gold text-brand-black px-3 py-1 rounded-full text-sm font-medium">
                       {post.category}
                     </span>
                     <span className="text-gray-500 text-sm">{post.readTime}</span>
                   </div>
                   
-                  <h2 className="text-xl font-bold text-navy mb-3 line-clamp-2">
-                    <Link href={`/blog/${post.id}`} className="hover:text-green transition-colors">
+                  <h2 className="h4 text-brand-black mb-3 line-clamp-2">
+                    <Link href={`/blog/${post.id}`} className="hover:text-brand-gold transition-colors">
                       {post.title}
                     </Link>
                   </h2>
                   
-                  <p className="text-gray-600 mb-4 line-clamp-3">
+                  <p className="body-text-sm text-gray-600 mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
                   
@@ -147,7 +162,7 @@ export default function BlogPage() {
                     <span className="text-gray-500 text-sm">{post.date}</span>
                     <Link
                       href={`/blog/${post.id}`}
-                      className="text-green font-medium hover:text-green-dark transition-colors"
+                      className="text-brand-gold font-medium hover:text-brand-gold-dark transition-colors"
                     >
                       Read More →
                     </Link>
@@ -159,7 +174,7 @@ export default function BlogPage() {
 
           {/* Load More Button */}
           <div className="text-center mt-12">
-            <button className="bg-navy text-white px-8 py-3 rounded-lg font-semibold hover:bg-navy-dark transition-colors duration-200">
+            <button className="bg-brand-black text-white px-8 py-3 rounded-lg btn hover:bg-gray-800 transition-colors duration-200">
               Load More Posts
             </button>
           </div>
@@ -169,10 +184,10 @@ export default function BlogPage() {
       {/* Newsletter Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-navy mb-4">
+          <h2 className="h2 text-brand-black mb-4">
             Stay Updated
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="body-text-lg text-gray-600 mb-8">
             Subscribe to our newsletter for the latest roofing tips, maintenance guides, and industry insights.
           </p>
           
@@ -180,9 +195,9 @@ export default function BlogPage() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green focus:border-transparent"
+              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent"
             />
-            <button className="bg-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-dark transition-colors duration-200">
+            <button className="bg-brand-gold text-brand-black px-6 py-3 rounded-lg btn hover:bg-brand-gold-dark transition-colors duration-200">
               Subscribe
             </button>
           </div>

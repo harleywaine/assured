@@ -224,13 +224,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <svg className="w-12 h-12 text-gray-400 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                  </svg>
-                  <p className="text-gray-500 text-sm">Blog Image</p>
-                </div>
+              <div className="h-64 overflow-hidden">
+                <img
+                  src="/completedworks/28036a99-b975-4ece-9611-a9d763d9e17d 2.JPG"
+                  alt="Storm Damage Assessment"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <div className="p-6">
                 <span className="bg-green-light text-white px-3 py-1 rounded-full text-sm font-medium mb-3 inline-block">
@@ -251,13 +250,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             </article>
 
             <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <svg className="w-12 h-12 text-gray-400 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                  </svg>
-                  <p className="text-gray-500 text-sm">Blog Image</p>
-                </div>
+              <div className="h-48 overflow-hidden">
+                <img
+                  src="/completedworks/D63704C6-3C52-4574-86F9-07B7509533D5.JPG"
+                  alt="Roof Ventilation Guide"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <div className="p-6">
                 <span className="bg-green-light text-white px-3 py-1 rounded-full text-sm font-medium mb-3 inline-block">
@@ -278,13 +276,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             </article>
 
             <article className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <div className="text-center">
-                  <svg className="w-12 h-12 text-gray-400 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                  </svg>
-                  <p className="text-gray-500 text-sm">Blog Image</p>
-                </div>
+              <div className="h-48 overflow-hidden">
+                <img
+                  src="/completedworks/69A13C13-6DA3-4E33-B1B4-6C5C864A9AE3.JPG"
+                  alt="Understanding Roof Warranties"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <div className="p-6">
                 <span className="bg-green-light text-white px-3 py-1 rounded-full text-sm font-medium mb-3 inline-block">
