@@ -122,7 +122,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
 
                   {/* Email */}
                   <a
-                    href="mailto:will@assuredecosystem.co.uk"
+                    href="mailto:will@elevateassured.co.uk"
                     className="flex-1 group flex items-center gap-3 p-3.5 rounded-lg border-2 border-gray-200 hover:border-brand-gold hover:bg-gray-50 transition-all duration-200"
                   >
                     <div className="w-10 h-10 bg-brand-gold rounded-lg flex items-center justify-center flex-shrink-0 text-brand-black group-hover:bg-brand-gold-dark group-hover:text-white transition-all duration-200">
@@ -133,7 +133,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="text-xs font-medium text-gray-500 mb-0.5">Email</div>
-                      <div className="text-base font-semibold text-brand-black group-hover:text-brand-gold transition-colors duration-200 truncate">will@assuredecosystem.co.uk</div>
+                      <div className="text-base font-semibold text-brand-black group-hover:text-brand-gold transition-colors duration-200 truncate">will@elevateassured.co.uk</div>
                     </div>
                     <svg className="w-4 h-4 text-gray-400 group-hover:text-brand-gold transition-colors duration-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

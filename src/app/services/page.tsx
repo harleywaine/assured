@@ -11,10 +11,12 @@ const ServicesPage = () => {
     {
       title: 'Roof Installation',
       subtitle: 'Durable, beautiful roofs built to stand the test of time.',
-      description: 'Whether you\'re constructing a new property or replacing an ageing roof, we provide expert installation services designed around your home, your style, and your budget. Every roof we install is crafted with precision and care, using premium materials and proven techniques.',
+      description: 'Whether you\'re constructing a new property or replacing an ageing roof, we provide expert installation services designed around your home, your style, and your budget. Every roof we install is crafted with precision and care, using premium materials and proven techniques. We specialise in both tiled roofing (concrete tiles, clay tiles, slate) and flat roofing systems (torch-on felt, EPDM rubber membranes).',
       features: [
         'New roof design and installation for homes and developments',
         'Complete roof replacement and re-roofing',
+        'Tiled roofing installation (concrete, clay, slate)',
+        'Flat roofing installation (torch-on, EPDM)',
         'Overlay solutions (adding a new layer where structurally safe)',
         'Roof structure reinforcement and support upgrades'
       ],
@@ -29,10 +31,11 @@ const ServicesPage = () => {
     {
       title: 'Roof Repairs',
       subtitle: 'Fast, effective fixes for leaks, damage, and wear.',
-      description: 'Roof problems can escalate quickly if left untreated. Our expert repair team acts fast to diagnose the issue and carry out lasting repairs, protecting your home from further damage and avoiding costly future work.',
+      description: 'Roof problems can escalate quickly if left untreated. Our expert repair team acts fast to diagnose the issue and carry out lasting repairs, protecting your home from further damage and avoiding costly future work. We repair both tiled and flat roofing systems.',
       features: [
         'Leak detection and repair',
-        'Tile replacement',
+        'Tile replacement and repair',
+        'Flat roofing repairs (torch-on felt, EPDM membrane)',
         'Flashing repair and resealing',
         'Storm, wind, or impact damage restoration'
       ],
@@ -65,7 +68,7 @@ const ServicesPage = () => {
     {
       title: 'Waterproofing & Weatherproofing',
       subtitle: 'Complete protection against the elements.',
-      description: 'British weather can be tough on your roof, but with the right treatments and coatings, it doesn\'t have to be. We offer advanced waterproofing and weatherproofing solutions that improve durability, reduce leaks, and extend the lifespan of your roof.',
+      description: 'British weather can be tough on your roof, but with the right treatments and coatings, it doesn\'t have to be. We offer advanced waterproofing and weatherproofing solutions for both tiled and flat roofs that improve durability, reduce leaks, and extend the lifespan of your roof.',
       features: [
         'Roof sealing and protective coatings',
         'Waterproof membranes and barrier installation',
@@ -136,7 +139,7 @@ const ServicesPage = () => {
               Expert Roofing Solutions for Dorset and Hampshire
             </p>
             <p className="body-text-lg text-gray-300 max-w-3xl mx-auto px-4">
-              At Elevate Assured, we specialise in delivering reliable, high-quality roofing services that protect your property and add long-term value. Whether you're building from the ground up, repairing storm damage, or investing in preventative maintenance, our experienced team ensures every roof is built to last and finished to perfection.
+              At Elevate Assured, we specialise in delivering reliable, high-quality roofing services that protect your property and add long-term value. Whether you need tiled roofing (concrete, clay, slate) or flat roofing systems (torch-on felt, EPDM membranes), whether you're building from the ground up, repairing storm damage, or investing in preventative maintenance, our experienced team ensures every roof is built to last and finished to perfection.
             </p>
           </motion.div>
         </div>
@@ -274,7 +277,7 @@ const ServicesPage = () => {
               Service Details
             </h2>
             <p className="body-text-lg text-gray-600 max-w-3xl mx-auto">
-              Learn more about our comprehensive range of roofing services and what makes us the trusted choice across Dorset.
+              Learn more about our comprehensive range of roofing services and what makes us the trusted choice across Dorset and Hampshire.
             </p>
           </motion.div>
 
@@ -400,7 +403,7 @@ const ServicesPage = () => {
                   </svg>
                 </div>
                 <h4 className="font-semibold text-brand-black mb-2">Local Experts</h4>
-                <p className="text-sm text-gray-600">Serving Dorset for decades</p>
+                <p className="text-sm text-gray-600">Serving Dorset and Hampshire for decades</p>
               </div>
               
               <div className="flex flex-col items-center">

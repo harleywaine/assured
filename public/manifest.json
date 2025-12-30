@@ -1,0 +1,23 @@
+{
+  "name": "Elevate Assured - Professional Roofing Services",
+  "short_name": "Elevate Assured",
+  "description": "Professional roofing services in Dorset and Hampshire. Expert installations, repairs, and maintenance.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "/Logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
+

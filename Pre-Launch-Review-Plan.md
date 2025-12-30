@@ -161,7 +161,7 @@
 
 ### Text Content
 - [ ] Verify company name "Elevate Assured" is consistent
-- [ ] Check email: `will@assuredecosystem.co.uk`
+- [ ] Check email: `will@elevateassured.co.uk`
 - [ ] Verify phone: `07918 291605`
 - [ ] Check location: "Dorset and Hampshire"
 - [ ] Review pricing: "£99 assessment" is consistent

@@ -32,7 +32,7 @@ export default function FAQPage() {
     },
     {
       question: 'What types of roofing materials do you work with?',
-      answer: 'We work with a wide range of roofing materials including concrete tiles, clay tiles, slate, metal roofing, and more. We can help you choose the best material for your property and budget.',
+      answer: 'We work with a wide range of roofing materials including tiled roofing (concrete tiles, clay tiles, slate) and flat roofing systems (torch-on felt, EPDM rubber membranes). We also work with metal roofing and other materials. We can help you choose the best material for your property and budget.',
     },
     {
       question: 'Do I need planning permission for roof work?',
@@ -40,7 +40,7 @@ export default function FAQPage() {
     },
     {
       question: 'How do I book an assessment?',
-      answer: 'You can book a £99 assessment by calling us on 07918 291605, emailing will@assuredecosystem.co.uk, or using our contact form. We\'ll arrange a convenient time to visit your property.',
+      answer: 'You can book a £99 assessment by calling us on 07918 291605, emailing will@elevateassured.co.uk, or using our contact form. We\'ll arrange a convenient time to visit your property.',
     },
   ];
 

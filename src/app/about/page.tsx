@@ -59,13 +59,13 @@ const AboutPage = () => {
               Trusted Local Roofers Dedicated to Quality, Safety, and Service
             </p>
             <p className="body-text-lg text-gray-300 max-w-3xl mx-auto px-4">
-              At Elevate Assured, we're all about providing honest, reliable roofing services you can trust. With over 20 years of experience in the trade, we've built our reputation on quality workmanship, friendly service, and roofs that last.
+              Elevate Assured is a professional roofing company based in Christchurch, built on over 10 years of industry experience. The business was founded on a strong reputation developed through work carried out for family and friends, and has since grown steadily through trust, reliability, and consistent quality.
             </p>
             <p className="body-text-lg text-gray-300 max-w-4xl mx-auto mb-4 md:mb-6 px-4">
-              Whether you need a simple repair, a fresh installation, or just some expert advice, our team is here to help. We take pride in every job we do, big or small, and treat every home as if it were our own.
+              We specialise in delivering high-standard roofing solutions, with a focus on workmanship, durability, and attention to detail. Every project—whether a minor repair or a full roofing installation—is approached with the same commitment to professionalism and care.
             </p>
             <p className="body-text-lg text-gray-300 max-w-4xl mx-auto px-4">
-              With Elevate Assured, you get more than just a roofing company, you get a team that genuinely cares about protecting your home and giving you peace of mind for years to come.
+              At Elevate Assured, we believe in honest communication, dependable service, and results that stand the test of time. Our continued growth is a direct reflection of customer satisfaction and recommendations, and we are proud to serve homeowners throughout Dorset & Hampshire with a roofing service they can rely on.
             </p>
           </motion.div>
         </div>
@@ -86,10 +86,13 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-6 text-gray-600 leading-relaxed">
                 <p>
-                  We started Elevate Assured because we saw too many homeowners getting let down by poor workmanship and unreliable contractors. As a family-run business in Dorset, we decided to do things differently, focusing on getting the job done right the first time, every time.
+                  Elevate Assured is a professional roofing company based in Christchurch, built on over 10 years of industry experience. The business was founded on a strong reputation developed through work carried out for family and friends, and has since grown steadily through trust, reliability, and consistent quality.
                 </p>
                 <p>
-                  Over the years, we've worked on everything from quick repairs to full roof replacements across Dorset and Hampshire. Our team has the experience to handle whatever comes up, and we're honest about what needs doing and what it'll cost. No surprises, no shortcuts, just solid work that lasts.
+                  We specialise in delivering high-standard roofing solutions, with a focus on workmanship, durability, and attention to detail. Every project—whether a minor repair or a full roofing installation—is approached with the same commitment to professionalism and care.
+                </p>
+                <p>
+                  At Elevate Assured, we believe in honest communication, dependable service, and results that stand the test of time. Our continued growth is a direct reflection of customer satisfaction and recommendations, and we are proud to serve homeowners throughout Dorset & Hampshire with a roofing service they can rely on.
                 </p>
               </div>
             </motion.div>
@@ -199,10 +202,10 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-6 text-gray-600 leading-relaxed">
                 <p>
-                  We're more than just roofers — we're your neighbours. As a local, family-run business, we take pride in serving our Dorset community with professionalism and a personal touch.
+                  We're more than just roofers — we're your local experts. As a trusted local business, we take pride in serving our Dorset and Hampshire community with professionalism, expertise, and a commitment to quality that shows in every project we complete.
                 </p>
                 <p>
-                  Our reputation has been built on word of mouth, repeat customers, and long-term relationships, and we're proud to be the go-to roofing specialists for so many families and businesses in the region.
+                  Our reputation has been built on delivering exceptional results, honest communication, and reliable service. We're proud to be the go-to roofing specialists for so many homeowners and businesses across the region who value quality workmanship and professional service.
                 </p>
               </div>
             </motion.div>
@@ -225,7 +228,7 @@ const AboutPage = () => {
             </h2>
             
             <p className="text-xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
-              Your home deserves the very best protection, and we're here to provide it. Contact Elevate Assured today to book a £99 assessment and discover why so many Dorset homeowners trust us with their roofs.
+              Your home deserves the very best protection, and we're here to provide it. Contact Elevate Assured today to book a £99 assessment and discover why so many Dorset and Hampshire homeowners trust us with their roofs.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

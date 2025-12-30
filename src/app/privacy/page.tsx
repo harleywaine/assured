@@ -98,7 +98,7 @@ export default function PrivacyPage() {
             </p>
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <p className="body-text text-gray-700 mb-2">
-                <strong>Email:</strong> will@assuredecosystem.co.uk
+                <strong>Email:</strong> will@elevateassured.co.uk
               </p>
               <p className="body-text text-gray-700">
                 <strong>Phone:</strong> 07918 291605

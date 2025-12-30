@@ -27,6 +27,7 @@ const blogPosts = {
         <li><strong>Metal roofing</strong> is excellent for areas with heavy rainfall or high winds</li>
         <li><strong>Clay tiles</strong> are perfect for traditional properties and offer excellent durability</li>
         <li><strong>Slate</strong> is durable in most conditions but can be heavy for some structures</li>
+        <li><strong>Flat roofing (torch-on felt, EPDM)</strong> is ideal for low-pitch roofs and extensions, offering excellent waterproofing and durability</li>
       </ul>
       
       <h3>Budget Considerations</h3>
@@ -40,6 +41,8 @@ const blogPosts = {
         <li>Clay tiles: 50-100 years</li>
         <li>Slate: 75-200 years</li>
         <li>Natural slate: 100+ years</li>
+        <li>Torch-on felt: 15-25 years</li>
+        <li>EPDM rubber membrane: 30-50 years</li>
       </ul>
       
       <h2>Popular Roofing Materials</h2>
@@ -58,6 +61,13 @@ const blogPosts = {
       
       <h3>Clay and Concrete Tiles</h3>
       <p>These materials offer excellent durability and a distinctive appearance. They're particularly popular in Mediterranean and Spanish-style homes.</p>
+      
+      <h3>Flat Roofing Systems</h3>
+      <p>Flat roofing is essential for low-pitch roofs, extensions, and commercial properties. The two main types we work with are:</p>
+      <ul>
+        <li><strong>Torch-on felt:</strong> A multi-layer system that's torch-applied for a strong, waterproof seal. Ideal for residential extensions and commercial buildings.</li>
+        <li><strong>EPDM (Ethylene Propylene Diene Monomer):</strong> A single-ply rubber membrane that's highly durable and flexible. Excellent for both new installations and repairs, offering superior weather resistance and a long lifespan.</li>
+      </ul>
       
       <h2>Making Your Decision</h2>
       <p>When choosing a roofing material, consider your long-term goals, budget constraints, and aesthetic preferences. It's also important to consult with a professional roofing contractor who can assess your specific situation and provide expert recommendations.</p>

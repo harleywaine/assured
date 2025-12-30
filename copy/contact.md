@@ -12,7 +12,7 @@ How to Contact Us
  Assured Roofing
  Bournemouth, Dorset, UK
  Phone: [07918291605]
- Email: [enquiries@assuredrooding.co]
+ Email: [will@elevateassured.co.uk]
 
 Send Us a Message
 Fill out the contact form below with a few details about your project, and one of our friendly team members will be in touch shortly. If you prefer, you can also book a free roof inspection or consultation directly using our online booking calendar.

@@ -12,6 +12,20 @@ export const metadata: Metadata = {
     title: 'Elevate Assured - Professional Roofing Services',
     description: 'Expert roofing solutions for homes and businesses across Dorset and Hampshire.',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Elevate Assured - Professional Roofing Services',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Elevate Assured - Professional Roofing Services',
+    description: 'Expert roofing solutions for homes and businesses across Dorset and Hampshire.',
+    images: ['/og-image.png'],
   },
 };
 
@@ -36,7 +50,7 @@ export default function Home() {
       ),
       title: "Repairs",
       description: "Fast, effective fixes for leaks, damage, and wear.",
-      features: ["Leak Detection & Repair", "Tile Replacement", "Flashing Repair", "Storm Damage Repair"],
+      features: ["Leak Detection & Repair", "Tile Replacement", "Flat Roofing Repairs (Torch-on, EPDM)", "Flashing Repair", "Storm Damage Repair"],
       price: "Quote"
     },
     {
@@ -87,7 +101,7 @@ export default function Home() {
               Your Roof Deserves Expert Care
             </h2>
             <p className="body-text-lg text-gray-600 max-w-4xl mx-auto">
-              Your roof is your home's first line of defence, and it deserves expert care. At Elevate Assured, we deliver reliable, high-quality roofing solutions that protect your property and provide total peace of mind. With years of experience, exceptional craftsmanship, and a commitment to customer satisfaction, we're trusted by homeowners and developers across Dorset to get the job done right.
+              Your roof is your home's first line of defence, and it deserves expert care. At Elevate Assured, we deliver reliable, high-quality roofing solutions that protect your property and provide total peace of mind. With years of experience, exceptional craftsmanship, and a commitment to customer satisfaction, we're trusted by homeowners and developers across Dorset and Hampshire to get the job done right.
             </p>
           </div>
         </div>
@@ -155,7 +169,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="h4 text-brand-black mb-4">Proven Expertise</h3>
-              <p className="body-text-sm text-gray-600">Decades of experience working on homes and developments across Dorset.</p>
+              <p className="body-text-sm text-gray-600">Decades of experience working on homes and developments across Dorset and Hampshire.</p>
             </div>
 
             <div className="text-center">
