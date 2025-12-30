@@ -12,6 +12,7 @@ const ServicesPage = () => {
       title: 'Roof Installation',
       subtitle: 'Durable, beautiful roofs built to stand the test of time.',
       description: 'Whether you\'re constructing a new property or replacing an ageing roof, we provide expert installation services designed around your home, your style, and your budget. Every roof we install is crafted with precision and care, using premium materials and proven techniques. We specialise in both tiled roofing (concrete tiles, clay tiles, slate) and flat roofing systems (torch-on felt, EPDM rubber membranes).',
+      description2: 'Our installation process begins with a thorough assessment of your property\'s structure and requirements. We work closely with you to select the right materials and design that complement your home\'s architecture while providing maximum protection. From initial consultation through to final inspection, we ensure every detail is handled professionally, with minimal disruption to your daily life. All our installations come with comprehensive warranties, giving you confidence that your investment is protected.',
       features: [
         'New roof design and installation for homes and developments',
         'Complete roof replacement and re-roofing',
@@ -32,6 +33,7 @@ const ServicesPage = () => {
       title: 'Roof Repairs',
       subtitle: 'Fast, effective fixes for leaks, damage, and wear.',
       description: 'Roof problems can escalate quickly if left untreated. Our expert repair team acts fast to diagnose the issue and carry out lasting repairs, protecting your home from further damage and avoiding costly future work. We repair both tiled and flat roofing systems.',
+      description2: 'When you contact us with a roofing issue, we respond promptly—often the same day for emergencies. Our experienced roofers use thorough diagnostic techniques to identify the root cause of problems, ensuring we fix issues properly the first time. Whether it\'s a small leak, storm damage, or structural concerns, we have the expertise and equipment to handle repairs efficiently and safely. We use matching materials and techniques to ensure repairs blend seamlessly with your existing roof, maintaining both functionality and aesthetics.',
       features: [
         'Leak detection and repair',
         'Tile replacement and repair',
@@ -50,7 +52,8 @@ const ServicesPage = () => {
     {
       title: 'Maintenance & Cleaning',
       subtitle: 'Extend your roof\'s life and keep your property safe.',
-      description: 'Regular maintenance is the best way to avoid unexpected issues and costly repairs. Our professional cleaning and care services protect your roof\'s integrity and keep your property looking its best.',
+      description: 'Regular maintenance is the best way to avoid unexpected issues and costly repairs. Our professional cleaning and care services protect your roof\'s integrity and keep your property looking its best. A well-maintained roof can last significantly longer than one that\'s neglected.',
+      description2: 'Our comprehensive maintenance program includes thorough inspections to catch potential problems early, before they become expensive repairs. We clean gutters and remove debris that can cause blockages and water damage, treat moss and algae growth that can degrade roofing materials, and check all flashings, seals, and joints for signs of wear. We provide detailed condition reports after each visit, so you know exactly what we found and what action, if any, is needed.',
       features: [
         'Scheduled roof inspections and condition reports',
         'Gutter, fascia, and soffit repair or replacement',
@@ -69,6 +72,7 @@ const ServicesPage = () => {
       title: 'Waterproofing & Weatherproofing',
       subtitle: 'Complete protection against the elements.',
       description: 'British weather can be tough on your roof, but with the right treatments and coatings, it doesn\'t have to be. We offer advanced waterproofing and weatherproofing solutions for both tiled and flat roofs that improve durability, reduce leaks, and extend the lifespan of your roof.',
+      description2: 'Our waterproofing services create an additional barrier against moisture, protecting your property from water ingress even in challenging conditions. We apply specialist sealants and protective coatings that are designed to withstand UV exposure, temperature fluctuations, and heavy rainfall. For flat roofs, we install high-quality waterproof membranes and barriers that provide superior protection. We also offer thermal insulation upgrades that not only improve weather resistance but can help reduce energy bills by preventing heat loss.',
       features: [
         'Roof sealing and protective coatings',
         'Waterproof membranes and barrier installation',
@@ -87,6 +91,7 @@ const ServicesPage = () => {
       title: 'Roof Additions',
       subtitle: 'Enhance your home\'s comfort, light, and energy efficiency.',
       description: 'Make the most of your roof with carefully planned additions and upgrades. From natural light solutions to renewable energy preparation, our installation services add value, comfort, and future-readiness to your property.',
+      description2: 'Skylights and roof windows can transform dark spaces into bright, welcoming areas while reducing your reliance on artificial lighting. We install these features with precision, ensuring they\'re properly sealed and integrated with your existing roof structure. For properties with chimneys, we provide construction, repair, and removal services, always ensuring structural integrity and proper ventilation. We also install roof ventilation systems that improve air circulation, reduce condensation, and help regulate temperature throughout your home. If you\'re considering solar panels in the future, we can prepare your roof by reinforcing the structure and creating proper mounting points, making future installation simpler and more cost-effective.',
       features: [
         'Skylight and roof window installation',
         'Chimney construction, repairs, and removals',
@@ -302,9 +307,14 @@ const ServicesPage = () => {
                       <p className="lead text-gray-700 mb-6">
                         {service.subtitle}
                       </p>
-                      <p className="body-text text-gray-600 mb-8">
+                      <p className="body-text text-gray-600 mb-4">
                         {service.description}
                       </p>
+                      {service.description2 && (
+                        <p className="body-text text-gray-600 mb-8">
+                          {service.description2}
+                        </p>
+                      )}
                       
                       <div>
                         <h4 className="text-lg font-semibold text-brand-black mb-6">
