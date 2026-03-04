@@ -133,7 +133,7 @@ const ContactForm = ({ onSuccess }: ContactFormProps) => {
               onChange={handleChange}
               required
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent transition-colors duration-200 text-sm"
-              placeholder="07918 291605"
+              placeholder="01202 619792"
             />
           </div>
 

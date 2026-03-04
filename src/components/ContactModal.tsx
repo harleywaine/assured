@@ -103,7 +103,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
                 <div className="flex flex-col sm:flex-row gap-3 mb-5">
                   {/* Phone */}
                   <a
-                    href="tel:07918291605"
+                    href="tel:01202619792"
                     className="flex-1 group flex items-center gap-3 p-3.5 rounded-lg border-2 border-gray-200 hover:border-brand-gold hover:bg-gray-50 transition-all duration-200"
                   >
                     <div className="w-10 h-10 bg-brand-gold rounded-lg flex items-center justify-center flex-shrink-0 text-brand-black group-hover:bg-brand-gold-dark group-hover:text-white transition-all duration-200">
@@ -113,7 +113,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="text-xs font-medium text-gray-500 mb-0.5">Phone</div>
-                      <div className="text-base font-semibold text-brand-black group-hover:text-brand-gold transition-colors duration-200">07918 291605</div>
+                      <div className="text-base font-semibold text-brand-black group-hover:text-brand-gold transition-colors duration-200">01202 619792</div>
                     </div>
                     <svg className="w-4 h-4 text-gray-400 group-hover:text-brand-gold transition-colors duration-200 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

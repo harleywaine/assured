@@ -101,7 +101,7 @@ export default function PrivacyPage() {
                 <strong>Email:</strong> will@elevateassured.co.uk
               </p>
               <p className="body-text text-gray-700">
-                <strong>Phone:</strong> 07918 291605
+                <strong>Phone:</strong> 01202 619792
               </p>
             </div>
 

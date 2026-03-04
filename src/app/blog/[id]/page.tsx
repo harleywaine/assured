@@ -5,9 +5,9 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 // Mock blog post data - in a real app, this would come from a CMS or database
@@ -147,8 +147,13 @@ const blogPosts = {
   }
 };
 
+export async function generateStaticParams() {
+  return Object.keys(blogPosts).map((id) => ({ id }));
+}
+
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
-  const post = blogPosts[params.id as keyof typeof blogPosts];
+  const { id } = await params;
+  const post = blogPosts[id as keyof typeof blogPosts];
   
   if (!post) {
     return {
@@ -162,8 +167,9 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   };
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = blogPosts[params.id as keyof typeof blogPosts];
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { id } = await params;
+  const post = blogPosts[id as keyof typeof blogPosts];
 
   if (!post) {
     return (
