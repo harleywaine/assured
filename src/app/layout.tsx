@@ -13,17 +13,10 @@ export const metadata: Metadata = {
   description: "Strong roofs. Safe homes. Assured. Professional roofing services in Dorset and Hampshire. Expert installations, repairs, and maintenance you can trust.",
   icons: {
     icon: [
-      { url: '/Logo.svg', type: 'image/svg+xml' },
-      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/Favicon.png', type: 'image/png', sizes: '32x32' },
     ],
     apple: [
-      { url: '/Logo.svg', sizes: '180x180', type: 'image/svg+xml' },
-    ],
-    other: [
-      {
-        rel: 'apple-touch-icon',
-        url: '/Logo.svg',
-      },
+      { url: '/Favicon.png', sizes: '32x32', type: 'image/png' },
     ],
   },
   openGraph: {
